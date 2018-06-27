@@ -100,17 +100,42 @@
 	 a:active {
 		color: #efefef;
 	 }
+	 
+	 .screen-reader {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1em;
+		margin: 1em;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		white-space: nowrap;
+		width: 1em;
+	 }
+	 
+	 .screen-reader-focusable:active,
+	 .screen-reader-focusable:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		white-space: normal;
+		width: auto;
+	 }
+	 
     </style>
   </head>
  
     
   <body class="container">
     <header>
+	   <p><a class="screen-reader screen-reader-focusable" href="#content">Saltar para as notícias</a></p>
        <img class="logo" src="Le@dResearchdistrict.jpg" alt="Sigla Lead Research News" >
        <h1>Newsletter Julho 2018</h1>
    </header>
    
-      <section id="main">
+      <section id="main"><a name="content">
       
         <div class="row">
          <div class="col-sm">
@@ -155,10 +180,10 @@
          <p>leadnews.uab@gmail.com</p>
         </div> 
         <div class="col-sm">
-         <img class="resize" src="sigla_lead_b.jpg" alt="Logótipo do Laboratório de educação a distância";  padding: 1.25em;"> 
+         <img class="resize" src="sigla_lead_b.jpg" alt="Logótipo do Laboratório de educação a distância" > 
         </div>
         <div class="col-sm">
-         <img class="resize" src="logo_uab.png" alt="Logótipo da Universidade Aberta";  padding: 1.25em;"> 
+         <img class="resize" src="logo_uab.png" alt="Logótipo da Universidade Aberta"> 
        </div>
         <div class="col-sm">
          <img class="resize" src="logo_fct.png" alt="Logótipo da Fundação para a Ciênciae Tecnologia"> 
