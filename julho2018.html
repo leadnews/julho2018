@@ -17,7 +17,7 @@
 			}
 			h2, h3, h4, h5, h6 {
 			font-family: open-sans, sans-serif;
-			LINE-HEIGHT: 1.875em
+			LINE-HEIGHT: 1.575em
 			}
 			h1 {
 			text-align::bottom
@@ -131,10 +131,16 @@
 					<form id="feedback-form" method="post" action="https://poll.pollcode.com/71735827">
 						<div style="background-color:#fdfefe;padding:2px 5px;width:100%;font-size:small;color:#000000;box-shadow: 0px 0px 2px #888;">
 						<div style="padding:5px 0px 2px 1px;"><h2 style="font-size:small;">Esta página é acessível a tecnologias de apoio?</h2></div>
-						<div>
-						<input type="radio" name="answer" value="1" id="answer_1" /><label for="answer_1" style="padding-left: 3px;">Muito</label><div style="clear:both;height:2px;"></div>
-						<input type="radio" name="answer" value="2" id="answer_2" /><label for="answer_2" style="padding-left: 3px;">Pouco</label><div style="clear:both;height:2px;"></div>
-						<div style="padding:5px;"><input type="submit" id="feedback-submit" value=" Vote "></div>
+						<div <div class="row">
+						  <div class="col-sm">
+							<input type="radio" name="answer" value="1" id="answer_1" /><label for="answer_1" style="padding-left: 3px;">Muito</label><div style="clear:both;height:2px;"></div>
+						  </div>
+						  <div class="col-sm">
+							  <input type="radio" name="answer" value="2" id="answer_2" /><label for="answer_2" style="padding-left: 3px;">Pouco</label><div style="clear:both;height:2px;"></div>
+						  </div>
+						  <div class="col-sm">
+							  <div style="padding:5px;"><input type="submit" id="feedback-submit" value=" Vote "></div>
+						  </div>
 						</div>
 						</div>
 					</form>
